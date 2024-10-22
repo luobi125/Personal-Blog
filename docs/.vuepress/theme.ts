@@ -31,6 +31,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
+    avatar: "https://weavatar.com/avatar/e21f385c22a8565e349d379782630bc446e0cdc69ed6bb9360321e635dbd6f26?s=512",
     description: "一个一个一个",
     intro: "/intro.html",
     medias: {
