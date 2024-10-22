@@ -43,10 +43,6 @@ export default hopeTheme({
       Steam: "https://example.com",
       Weibo: "https://weibo.com/u/5012210269",
       Zhihu: "https://www.zhihu.com/people/zorua-fox",
-      VuePressThemeHope: {
-        icon: "https://theme-hope-assets.vuejs.press/logo.svg",
-        link: "https://theme-hope.vuejs.press",
-      },
     },
   },
 
