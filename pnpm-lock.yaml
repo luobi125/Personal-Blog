@@ -7,12 +7,31 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@vue/repl':
+        specifier: ^4.4.2
+        version: 4.4.2
+      '@vuepress/plugin-blog':
+        specifier: 2.0.0-rc.56
+        version: 2.0.0-rc.56(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
+      '@vuepress/plugin-copyright':
+        specifier: 2.0.0-rc.56
+        version: 2.0.0-rc.56(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
+      '@vuepress/plugin-markdown-math':
+        specifier: 2.0.0-rc.56
+        version: 2.0.0-rc.56(markdown-it@14.1.0)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
+      '@vuepress/plugin-notice':
+        specifier: 2.0.0-rc.56
+        version: 2.0.0-rc.56(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
+      '@vuepress/plugin-watermark':
+        specifier: 2.0.0-rc.56
+        version: 2.0.0-rc.56(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
     devDependencies:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.18
         version: 2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3)
       sass-embedded:
-        specifier: ^1.79.5
+        specifier: ^1.80.3
         version: 1.80.3
       vue:
         specifier: ^3.5.12
@@ -22,7 +41,7 @@ importers:
         version: 2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12)
       vuepress-theme-hope:
         specifier: 2.0.0-rc.59
-        version: 2.0.0-rc.59(markdown-it@14.1.0)(sass-embedded@1.80.3)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
+        version: 2.0.0-rc.59(@vue/repl@4.4.2)(markdown-it@14.1.0)(sass-embedded@1.80.3)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
 
 packages:
 
@@ -648,6 +667,9 @@ packages:
 
   '@vue/reactivity@3.5.12':
     resolution: {integrity: sha512-UzaN3Da7xnJXdz4Okb/BGbAaomRHc3RdoWqTzlvd9+WBR5m3J39J1fGcHes7U3za0ruYn/iYy/a1euhMEHvTAg==}
+
+  '@vue/repl@4.4.2':
+    resolution: {integrity: sha512-MEAsBK/YzMFGINOBzqM40XTeIYAUsg7CqvXvD5zi0rhYEQrPfEUIdexmMjdm7kVKsKmcvIHxrFK2DFC35m9kHw==}
 
   '@vue/runtime-core@3.5.12':
     resolution: {integrity: sha512-hrMUYV6tpocr3TL3Ad8DqxOdpDe4zuQY4HPY3X/VRh+L2myQO8MFXPAMarIOSGNu0bFAjh1yBkMPXZBqCk62Uw==}
@@ -2550,6 +2572,8 @@ snapshots:
     dependencies:
       '@vue/shared': 3.5.12
 
+  '@vue/repl@4.4.2': {}
+
   '@vue/runtime-core@3.5.12':
     dependencies:
       '@vue/reactivity': 3.5.12
@@ -3939,7 +3963,7 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  vuepress-plugin-md-enhance@2.0.0-rc.59(markdown-it@14.1.0)(sass-embedded@1.80.3)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12)):
+  vuepress-plugin-md-enhance@2.0.0-rc.59(@vue/repl@4.4.2)(markdown-it@14.1.0)(sass-embedded@1.80.3)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12)):
     dependencies:
       '@mdit/plugin-alert': 0.13.1(markdown-it@14.1.0)
       '@mdit/plugin-align': 0.13.1(markdown-it@14.1.0)
@@ -3966,6 +3990,7 @@ snapshots:
       vuepress: 2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12)
       vuepress-shared: 2.0.0-rc.59(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
     optionalDependencies:
+      '@vue/repl': 4.4.2
       sass-embedded: 1.80.3
     transitivePeerDependencies:
       - '@vue/composition-api'
@@ -3983,7 +4008,7 @@ snapshots:
       - '@vue/composition-api'
       - typescript
 
-  vuepress-theme-hope@2.0.0-rc.59(markdown-it@14.1.0)(sass-embedded@1.80.3)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12)):
+  vuepress-theme-hope@2.0.0-rc.59(@vue/repl@4.4.2)(markdown-it@14.1.0)(sass-embedded@1.80.3)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12)):
     dependencies:
       '@vuepress/helper': 2.0.0-rc.56(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
       '@vuepress/plugin-active-header-links': 2.0.0-rc.55(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
@@ -4018,7 +4043,7 @@ snapshots:
       vue: 3.5.12
       vuepress: 2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12)
       vuepress-plugin-components: 2.0.0-rc.59(sass-embedded@1.80.3)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
-      vuepress-plugin-md-enhance: 2.0.0-rc.59(markdown-it@14.1.0)(sass-embedded@1.80.3)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
+      vuepress-plugin-md-enhance: 2.0.0-rc.59(@vue/repl@4.4.2)(markdown-it@14.1.0)(sass-embedded@1.80.3)(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
       vuepress-shared: 2.0.0-rc.59(vuepress@2.0.0-rc.18(@vuepress/bundler-vite@2.0.0-rc.18(@types/node@22.7.8)(sass-embedded@1.80.3))(vue@3.5.12))
     optionalDependencies:
       sass-embedded: 1.80.3

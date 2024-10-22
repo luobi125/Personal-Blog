@@ -4,16 +4,16 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://zorua.top",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "海屿有燕",
+    url: "https://zorua.top",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://weavatar.com/avatar/e21f385c22a8565e349d379782630bc446e0cdc69ed6bb9360321e635dbd6f26?s=512",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -26,7 +26,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: '<a href="https://beian.miit.gov.cn/">晋ICP备2023005192号</a>',
   displayFooter: true,
 
   // 博客相关
@@ -119,7 +119,6 @@ export default hopeTheme({
     // 此功能被开启用于演示，你应仅当使用时保留。
     markdownTab: true,
 
-    // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
       align: true,
       attrs: true,
@@ -168,8 +167,7 @@ export default hopeTheme({
       //   presets: ["ts", "vue"],
       // },
 
-      // 在启用之前安装 @vue/repl
-      // vuePlayground: true,
+      vuePlayground: true,
 
       // install sandpack-vue3 before enabling it
       // sandpack: true,
