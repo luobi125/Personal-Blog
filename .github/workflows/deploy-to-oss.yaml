@@ -1,0 +1,61 @@
+name: Website Deploy
+
+on:
+  push:
+    branches:
+      # 确保这是你正在使用的分支名称
+      - none
+  workflow_dispatch:
+
+#permissions:
+#  contents: write
+
+jobs:
+  deploy-to-oss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 签出仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # 如果你文档需要 Git 子模块，取消注释下一行
+          # submodules: true
+
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          run_install: true
+
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
+
+      - name: 构建文档
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: |
+          pnpm vuepress-vite build docs
+          > docs/.vuepress/dist/.nojekyll
+
+
+      - name: 安装阿里云 ossutil
+        run: |
+          sudo -v ; curl https://gosspublic.alicdn.com/ossutil/install.sh | sudo bash
+
+      - name: 配置 ossutil
+        run: |
+          ossutil config -L CH -e ${{ secrets.OSS_ENDPOINT }} -i ${{ secrets.OSS_ACCESS_KEY_ID }} -k ${{ secrets.OSS_ACCESS_KEY_SECRET }}
+      
+      - name: 上传dist下内容至阿里云OSS
+        run: ossutil64 cp -r /home/runner/work/Personal-Blog/Personal-Blog/docs/.vuepress/dist/ oss://zoruablog/ -u -f
+
+#      - name: 部署文档
+#        uses: JamesIves/github-pages-deploy-action@v4
+#        with:
+#          # 这是文档部署到的分支名称
+#          branch: gh-pages
+#          folder: docs/.vuepress/dist
