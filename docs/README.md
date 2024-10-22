@@ -2,8 +2,7 @@
 home: true
 layout: BlogHome
 icon: home
-title: 博客主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+title: 主页
 heroText: 燕栖屿
 heroFullScreen: true
 tagline: 茫茫海屿，有燕而居
