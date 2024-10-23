@@ -13,11 +13,11 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://weavatar.com/avatar/e21f385c22a8565e349d379782630bc446e0cdc69ed6bb9360321e635dbd6f26?s=512",
+  logo: "./assets/icon/title-icon.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "ZoruaFox/Personal-Blog",
 
-  docsDir: "src",
+  docsDir: "docs",
 
   // 导航栏
   navbar,
@@ -31,7 +31,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    avatar: "https://weavatar.com/avatar/e21f385c22a8565e349d379782630bc446e0cdc69ed6bb9360321e635dbd6f26?s=512",
+    avatar: "./assets/images/mainpage-avatar.png",
     description: "一个一个一个",
     intro: "/intro.html",
     medias: {
@@ -54,12 +54,14 @@ export default hopeTheme({
   plugins: {
     blog: true,
 
-    // 启用之前需安装 @waline/client
-    // 警告: 这是一个仅供演示的测试服务，在生产环境中请自行部署并使用自己的服务！
-    // comment: {
-    //   provider: "Waline",
-    //   serverURL: "https://waline-comment.vuejs.press",
-    // },
+     comment: {
+       provider: "Giscus",
+       repo: "ZoruaFox/Personal-Blog",
+       repoId: "R_kgDOND9uUA",
+       category: "Announcements",
+       categoryId: "DIC_kwDOND9uUM4Cjm3r",
+       mapping: "pathname",
+     },
 
     components: {
       components: ["Badge", "VPCard"],
