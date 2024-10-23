@@ -16,6 +16,10 @@ projects:
     name: 有兽焉Minecraft粉丝服
     desc: 400+玩家绝赞叠高高中
     link: https://help.mc.zorua.top
+  - icon: project
+    name: 罗比的博客
+    desc: 这只是一个友情链接
+    link: https://wiki.zorua.cn
 
 footer: <a href="https://beian.miit.gov.cn/">晋ICP备2023005192</a>
 ---
