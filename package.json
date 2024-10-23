@@ -21,6 +21,7 @@
     "@vue/repl": "^4.4.2",
     "@vuepress/plugin-blog": "2.0.0-rc.56",
     "@vuepress/plugin-copyright": "2.0.0-rc.56",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.0",
     "@vuepress/plugin-markdown-math": "2.0.0-rc.56",
     "@vuepress/plugin-notice": "2.0.0-rc.56",
     "@vuepress/plugin-watermark": "2.0.0-rc.56"
