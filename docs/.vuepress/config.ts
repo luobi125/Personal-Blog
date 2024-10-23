@@ -1,6 +1,5 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 
 export default defineUserConfig({
   base: "/",
@@ -12,9 +11,6 @@ export default defineUserConfig({
   theme,
 
   plugins: [
-    docsearchPlugin({
-      // 配置项
-    }),
   ],
 
   // 和 PWA 一起启用
