@@ -117,16 +117,16 @@ export default hopeTheme({
       // insert component easily
 
       // 在启用之前安装 echarts
-      echarts: true,
+      // echarts: true,
 
       // 在启用之前安装 flowchart.ts
-      flowchart: true,
+      // flowchart: true,
 
       // gfm requires mathjax-full to provide tex support
-      gfm: true,
+       gfm: true,
 
       // 在启用之前安装 mermaid
-      mermaid: true,
+      // mermaid: true,
 
       // playground: {
       //   presets: ["ts", "vue"],
